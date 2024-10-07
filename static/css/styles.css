@@ -1,0 +1,171 @@
+/* Retro Style with Pastel Colors */
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+body {
+    font-family: ubuntu-regular;
+    font-weight: 600;
+    background-color: #f5f5dc; /* Beige background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.form-column {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chat-column{
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chat-column {
+    border-right: 2px solid #d3d3d3;
+}
+
+#chat-window {
+    height: calc(100% - 120px);
+    border: 2px solid #d3d3d3;
+    background-color: #fafad2; /* Light goldenrod yellow */
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #d3d3d3;
+    background-color: #fffacd; /* Lemon chiffon */
+    font-size: 16px;
+}
+
+#send-button, #clear-button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: 2px solid #d3d3d3;
+    background-color: #87cefa; /* Light sky blue */
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 500ms;
+}
+
+#send-button:hover, #clear-button:hover {
+    background-color: #00bfff; /* Deep sky blue */
+    box-shadow: -3px 3px 0px black;
+}
+
+.form-column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-column label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-column input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #d3d3d3;
+    background-color: #fffacd; /* Lemon chiffon */
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form-column button {
+    padding: 10px 15px;
+    border: 2px solid #d3d3d3;
+    background-color: #ffb6c1; /* Light pink */
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 500ms;
+}
+
+.form-column button:hover {
+    background-color: #ff69b4; /* Hot pink */
+    box-shadow: -3px 3px 0px black;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #add8e6; /* Light blue */
+    margin-left: auto;
+    text-align: right;
+}
+
+.assistant-message {
+    background-color: #98fb98; /* Pale green */
+    margin-right: auto;
+    text-align: left;
+}

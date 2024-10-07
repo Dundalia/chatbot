@@ -1,0 +1,20 @@
+# Ignore API key file
+key.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables file
+.env
+
+# Virtual environment
+venv/
+env/
+
+# MacOS files
+.DS_Store
+
+# Other files to ignore
+*.log

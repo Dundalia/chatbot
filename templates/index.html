@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with GPT-4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-column">
+            <h2>Model Parameters</h2>
+            <form id="params-form">
+                <label for="temperature">Temperature:</label>
+                <input type="number" id="temperature" name="temperature" min="0" max="1" step="0.1" value="0.7">
+                <br>
+                <label for="max_tokens">Max Tokens:</label>
+                <input type="number" id="max_tokens" name="max_tokens" min="1" max="2048" value="150">
+                <br>
+                <button type="submit">Update Parameters</button>
+            </form>
+        </div>
+        <div class="chat-column">
+            <div id="chat-window">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="input-row">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+                <button id="clear-button">Clear Conversation</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
